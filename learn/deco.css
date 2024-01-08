@@ -1,0 +1,29 @@
+.spys {
+	text-shadow: 10px 2px 5px black
+	font-family: Arial, Verdana, sans-serif;
+	}
+	
+a:link {
+	text-decoration: none;
+	color: red;
+	font-size: 50px;
+	text-shadow: 1px 4px 10px #B60000;
+	font-family: Papyrus, Arial, snas-serif
+	}
+
+a:visited {
+	text-decoration: none;
+	color: #FF330E;
+	font-size: 50px;
+	text-shadow: 1px 4px 10px #B60000;
+	font-family: Papyrus, Arial, snas-serif
+	}
+
+button#dog {
+	color: #FFEE0C;
+	padding: 15px 20px;
+	font-size: 18px;
+	box-shadow: 10px 10px 50px black;
+	background-color: #174661;
+	border: none
+	}
