@@ -1,0 +1,41 @@
+body {
+	background-color: #393939;
+	font-family: Arial, sans-serif
+	}
+	
+p, h1, h2, h3, h4, h5, h6 {
+    color: white
+    }
+    
+img#round {
+	border-radius: 40px
+	}
+5.center {
+	text-align: center
+	}
+	
+#big {
+	font-size: 37px;
+	color: white
+	}
+	
+a {
+      outline: none;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+    }
+    a:link {
+      color: white;
+    }
+    a:visited {
+      color: white;
+    }
+    a:focus {
+      color: white
+    }
+    a:hover {
+      color: blue;
+    }
+    a:active {
+      color: lightblue;
+    }
