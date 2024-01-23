@@ -1,5 +1,5 @@
 body {
-	background-image: linear-gradient(#393939, #393939, #393939, black, black, black, white);
+	background-image: radial-gradient(circle farthest-side at 0% 0%, #8C8C8C, #1A1A1A);
 	font-family: Arial, sans-serif
 	}
 	
