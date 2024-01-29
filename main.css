@@ -6,11 +6,23 @@ body {
 p, h1, h2, h3, h4, h5, h6 {
     color: white
     }
+@keyframes StartUp {
+	from {
+		width: 10px
+		height: 10px
+		}
+	to {
+		width: 100px
+		height: 100px
+		}
+	}
     
-img#main {
+#main {
 	border-radius: 40px;
 	display: block;
-	margin: 0 auto
+	margin: 0 auto;
+	position: relative;
+	animation: StartUp 2s linear 1s
 	}
  .center {
 	text-align: center
@@ -46,9 +58,24 @@ a {
 	position: fixed
 	}
 	
-p.pass:hover {
-	font-size: 23px
+#pass:hover {
+	transform: scale(1.3);
+	transition-duration: 0.5s;
+	transition-delay: 0.5;
+	transition-propetry: transform, background;
+	background: yellow;
+	transition-timing-function: linear
 	}
-p {
-	transition-duration: 1s
+.dd {
+	position: relative;
+	display: inline-block
+	}
+.dd-content {
+	position: absolute;
+	display: none;
+	}
+.dd:hover > .dd-content {
+	display: block;
+	position: fixed;
+	transform: translateX(2px)
 	}
