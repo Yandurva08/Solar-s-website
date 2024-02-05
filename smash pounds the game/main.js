@@ -25,7 +25,7 @@ function smashfun() {
 	if (smashvar == 400) {
 	lvlsmash = "Ok, stop"
 	}
-	if (smashvar °= 500) {
+	if (smashvar == 500) {
 	lvlsmash = "I'm serious, stop"
 	}
 	if (smashvar == 600) {
