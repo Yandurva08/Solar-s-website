@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<body>
+			<script type="text/javascript">
+			function numv(min, max) {
+				document.getElementById("rdmv").innerHTML = "Is your number: " + "(" + Math.abs(Math.floor(Math.random() * (1 - 150 + 1)) + 1) +  ")" + Math.abs(Math.floor(Math.random() * (min - max + 1)) + min) + "?"
+				}
+			function subm() {
+				document.getElementById("changediv").innerHTML = "Thanks for submiting"
+				
+				}
+			</script>
+			<div id="changediv">
+			<p id="rdmv">Click the button to put your number</p>
+			<button onclick="numv(10000000000, 99999999999)">Generate number</button> <button onclick="subm()">Submit</button>
+			</div>
+		<body>
+	</head>
+</html>
