@@ -18,7 +18,7 @@ let nitrocost = 10
 let isfive = false
 let spc = 5
 function buynitro() {
-	if (smashvar >= nitrocost) {
+	if (smashvar >= Math.floor(nitrocost)) {
 	if (isfive == true) {
 	smashper += spc
 	spc *= 2
@@ -29,10 +29,10 @@ function buynitro() {
 		isfive = true
 		}
 	console.log("smash per: " + smashper)
-	smashvar -= nitrocost
-	nitrocost *= 2
+	smashvar -= Math.floor(nitrocost)
+	nitrocost *= 1.3
 	
-	document.getElementById("costnitro").innerHTML = nitrocost
+	document.getElementById("costnitro").innerHTML = Math.floor(nitrocost)
 	document.getElementById("smash").innerHTML = "Smashes: " + smashvar
 	buy.play()
 	}
@@ -52,13 +52,13 @@ const spsin = setInterval(function() {
 let spscost = 50
 let spsamo = 5
 function balling() {
-	if (smashvar >= spscost) {
+	if (smashvar >= Math.floor(spscost)) {
 		smashpersec += spsamo
 		smashvar -= spscost
-		spscost *= 2
+		spscost *= 1.5
 		spsamo *= 2
 		document.getElementById("smash").innerHTML = "smashes: " + smashvar
-		document.getElementById("costballing"). innerHTML = spscost
+		document.getElementById("costballing"). innerHTML = Math.floor(spscost)
 		document.getElementById("spss").innerHTML = "+" + spsamo
 		buy.play()
 		console.log("sps: " + smashpersec)
