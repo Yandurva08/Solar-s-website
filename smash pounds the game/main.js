@@ -15,7 +15,6 @@ var tap = new Audio('tap.ogg');
 }
 	}
 let nitrocost = 10
-let nitrocostmult = 1
 let isfive = false
 let spc = 5
 function buynitro() {
@@ -31,8 +30,7 @@ function buynitro() {
 		}
 	console.log("smash per: " + smashper)
 	smashvar -= nitrocost
-	nitrocost *= nitrocostmult *= 2
-	console.log("nitro cost mult: " + nitrocostmult)
+	nitrocost *= 2
 	
 	document.getElementById("costnitro").innerHTML = nitrocost
 	document.getElementById("smash").innerHTML = "Smashes: " + smashvar
@@ -52,13 +50,12 @@ const spsin = setInterval(function() {
 }
 }, 1000)
 let spscost = 50
-let spscostmult = 1
 let spsamo = 5
 function balling() {
 	if (smashvar >= spscost) {
 		smashpersec += spsamo
 		smashvar -= spscost
-		spscost *= spscostmult *= 2
+		spscost *= 2
 		spsamo *= 2
 		document.getElementById("smash").innerHTML = "smashes: " + smashvar
 		document.getElementById("costballing"). innerHTML = spscost
