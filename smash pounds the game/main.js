@@ -7,17 +7,18 @@ var deny = new Audio('deny.ogg');
 function smashfun() {
 var tap = new Audio('tap.ogg');
   tap.play();
-	smashvar = smashper + smashvar
+	smashvar = smashper + Math.floor(smashvar)
 	document.getElementById("smash").innerHTML = "Smashes: " + smashvar
 	if (smashvar > smashhs) {
 		smashhs = smashvar
-		document.getElementById("highscore"). innerHTML = "HighScore: " + smashhs
+		document.getElementById("highscore"). innerHTML = "HighScore: " + Math.floor(smashhs)
 }
 	}
-let nitrocost = 10
+let nitrocost = 30
 let isfive = false
 let spc = 5
 function buynitro() {
+	if (smashper <= 80000) {
 	if (smashvar >= Math.floor(nitrocost)) {
 	if (isfive == true) {
 	smashper += spc
@@ -30,7 +31,7 @@ function buynitro() {
 		}
 	console.log("smash per: " + smashper)
 	smashvar -= Math.floor(nitrocost)
-	nitrocost *= 1.3
+	nitrocost *= 1.5
 	
 	document.getElementById("costnitro").innerHTML = Math.floor(nitrocost)
 	document.getElementById("smash").innerHTML = "Smashes: " + smashvar
@@ -40,24 +41,30 @@ function buynitro() {
 		deny.play()
 	}
 	}
+	else {
+		alert("Max level")
+		deny.play()
+}
+}
 let smashpersec = 0
 const spsin = setInterval(function() {
 	smashvar += smashpersec
-	document.getElementById("smash").innerHTML = "Smashes: " + smashvar
+	document.getElementById("smash").innerHTML = "Smashes: " + Math.floor(smashvar)
 	if (smashvar > smashhs) {
 		smashhs = smashvar
-		document.getElementById("highscore"). innerHTML = "HighScore: " + smashhs
+		document.getElementById("highscore"). innerHTML = "HighScore: " + Math.floor(smashhs)
 }
 }, 1000)
 let spscost = 50
 let spsamo = 5
 function balling() {
+	if (spsamo <= 3000) {
 	if (smashvar >= Math.floor(spscost)) {
 		smashpersec += spsamo
 		smashvar -= spscost
-		spscost *= 1.5
+		spscost *= 1.8
 		spsamo *= 2
-		document.getElementById("smash").innerHTML = "smashes: " + smashvar
+		document.getElementById("smash").innerHTML = "Smashes: " + Math.floor(smashvar)
 		document.getElementById("costballing"). innerHTML = Math.floor(spscost)
 		document.getElementById("spss").innerHTML = "+" + spsamo
 		buy.play()
@@ -66,6 +73,11 @@ function balling() {
 	else {
 		deny.play()
 	}
+	}
+	else {
+		alert("Max level")
+		deny.play()
+		}
 	}
 function theend() {
 	deny.play()
