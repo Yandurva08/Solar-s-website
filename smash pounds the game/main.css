@@ -14,11 +14,11 @@ body {
 .pu {
 	background-color: white;
 	border-style: inset;
-border-width: 5px;
-border-color: red;
-display: inline-block;
-width: 150px;
-min-height: 10px;
-border-radius: 20px;
-box-shadow: 5px 5px 5px black
+    border-width: 5px;
+    border-color: red;
+    display: inline-block;
+    width: 150px;
+    min-height: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black
 	}
