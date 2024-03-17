@@ -12,7 +12,7 @@ body {
 	src: url(../Fonts/DTM-Mono.otf)
 	}
 .pu {
-	background-image: radial-gradient(circle farthest-side at 0% 0%, white, gray);
+	background-color: white;
 	border-style: inset;
 border-width: 5px;
 border-color: red;
