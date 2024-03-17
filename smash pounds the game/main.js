@@ -21,9 +21,9 @@ function buynitro() {
 	if (smashper <= 80000) {
 	if (smashvar >= Math.floor(nitrocost)) {
 	if (isfive == true) {
-	smashper += spc
-	spc *= 2
-	document.getElementById("npc").innerHTML = "+" + spc
+	smashper += Math.floor(spc)
+	spc *= 1.5
+	document.getElementById("npc").innerHTML = "+" + Math.floor(spc)
 	}
 	else {
 		smashper += 4
@@ -55,18 +55,18 @@ const spsin = setInterval(function() {
 		document.getElementById("highscore"). innerHTML = "HighScore: " + Math.floor(smashhs)
 }
 }, 1000)
-let spscost = 50
+let spscost = 100
 let spsamo = 5
 function balling() {
 	if (spsamo <= 3000) {
 	if (smashvar >= Math.floor(spscost)) {
-		smashpersec += spsamo
+		smashpersec += Math.floor(spsamo)
 		smashvar -= spscost
 		spscost *= 1.8
-		spsamo *= 2
+		spsamo *= 1.3
 		document.getElementById("smash").innerHTML = "Smashes: " + Math.floor(smashvar)
 		document.getElementById("costballing"). innerHTML = Math.floor(spscost)
-		document.getElementById("spss").innerHTML = "+" + spsamo
+		document.getElementById("spss").innerHTML = "+" + Math.floor(spsamo)
 		buy.play()
 		console.log("sps: " + smashpersec)
 	}

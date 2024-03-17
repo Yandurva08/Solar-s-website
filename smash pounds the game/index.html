@@ -6,26 +6,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<body>
 		<script src="main.js"></script>
-		<p style="text-align: right; color: gray">Game version: Beta 1.112<br>Game by Solar</p>
+		<p style="text-align: right; color: gray">Game version: Beta 1.12<br>Game by Solar</p>
 		<audio src="lil song Made by toby fox.mp3" controls loop autoplay></audio>
 		<h1 style="text-align: center">Smash Pounds:<br>the game</h1>
-		<img src="pounds.png" style="display: block; margin: 0 auto; max-width: 90%; border-radius: 10px; border-style: dotted; border-width: 5px; border-color: yellow" onclick="smashfun()">
+		<img src="pounds.png" style="display: block; margin: 0 auto; max-width: 90%; border-radius: 10px; border-style: outset; border-width: 5px; border-color: yellow" onclick="smashfun()">
 <p id="smash" style="text-align: center; font-family: dtm, main, sans-serif; font-size: 20px">Click him to smash</p>
 <p id="highscore" style="text-align: center; font-family: dtm, main, sans-serif; font-size: 15px"></p>
 			<br>
 			<h2 style="text-align: center">Power ups</h3>
-			<div style="background: white; display: inline-block; width: 150px; min-height: 10px; border-radius: 20px; box-shadow: 5px 5px 5px black" onclick="buynitro()">
+			<div class="pu" onclick="buynitro()">
 <img src="nitro.png" style="height: 150px; border-radius: 20px">
 <p style="color: black">Buy nitro for him (<span id="npc">+5</span> smashes per click)</p>
 <p style="color: black">cost: <span id="costnitro">30</span> smashes</p></div>
-<div style="background: white; display: inline-block; width: 150px; min-height: 10px; border-radius: 20px; box-shadow: 5px 5px 5px black" onclick="balling()">
+<div class="pu" onclick="balling()">
 <img src="balls.gif" style="height: 150px; border-radius: 20px">
 <p style="color: black">Balling<br>(<span id="spss">+5</span> smashes per second)</p>
-<p style="color: black">cost: <span id="costballing">50</span> smashes</p></div>
-<div style="background: white; display: inline-block; width: 150px; min-height: 10px; border-radius: 20px; box-shadow: 5px 5px 5px black" onclick="theend()">
+<p style="color: black">cost: <span id="costballing">100</span> smashes</p></div>
+<div class="pu" onclick="theend()">
 	<img src="questionmark.gif" style="height: 150px; border-radius: 20px">
 <p style="color: black">basically the end of the game, but it's a beta, it doesn't do anything practically</p>
 <p style="color: black">cost: <span id="costnitro">1,000,000,000</span> smashes</p></div>
+<br><br><hr>
+<p><strong> if you want to join SP:TG discord server, click this widget button "join discord"</strong></p>
+<br>
+	<iframe src="https://discord.com/widget?id=1218618028527194193&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" style="display: block; margin: 0 auto; width: 100%; height: 50%"></iframe>
 	</body>
 	</head>
 </html>
